@@ -195,7 +195,8 @@ plugin_ext_sources = [
 cpp_gcode_parser = Extension(
     'GcodePositionProcessor',
     sources=plugin_ext_sources,
-    language="c++"
+    language="c++",
+    include_dirs=['/usr/include/c++/12.2.1', '/usr/include/c++/12.2.1/armv6-alpine-linux-musleabihf']
 )
 
 
